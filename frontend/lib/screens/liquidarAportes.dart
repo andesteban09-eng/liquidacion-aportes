@@ -176,7 +176,7 @@ class CalcularAportesState extends State<CalcularAportes> {
             const SizedBox(height: 8),
 
             Text(
-              'Ingresa los datos del cotizante para calcular '
+              'Ingrese los datos del cotizante para calcular '
               'sus aportes al sistema de seguridad social.',
               style: TextStyle(fontSize: 14, color: Colors.grey.shade600),
             ),
@@ -212,7 +212,7 @@ class CalcularAportesState extends State<CalcularAportes> {
                         suffixText: 'COP',
                         prefixIcon: Icon(Icons.payments_outlined),
                         border: OutlineInputBorder(),
-                        helperText: 'Ingresa el sueldo en pesos colombianos',
+                        helperText: 'Ingrese el sueldo en pesos colombianos',
                       ),
                     ),
 
