@@ -1,0 +1,24 @@
+# Environment variables and secrets
+**/.env
+**/.env.*
+!**/.env.example
+
+# Node.js
+**/node_modules/
+**/npm-debug.log*
+
+# Flutter / Dart
+**/.dart_tool/
+**/build/
+**/.flutter-plugins-dependencies
+**/.pub-cache/
+**/.pub/
+
+# IDE
+**/.idea/
+**/*.iml
+.vscode/
+
+# Operating system
+.DS_Store
+Thumbs.db
