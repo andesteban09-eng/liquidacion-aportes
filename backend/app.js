@@ -22,6 +22,9 @@ app.post("/liquidaciones", async (req, res) => {
       if (!liquidacion.tarifaArl_id) {
         liquidacion.tarifaArl_id = 1;
       }
+      if (!Number.isInteger(liquidacion.tarifaArl_id)||liquidacion.tarifaArl_id <= 0) {
+        throw new Error("Tarifa ARL debe ser un número entero positivo");
+      }
       const ibc = liquidacion.ibc;
       const salud = liquidacion.ibc * 0.125;
       const pension = liquidacion.ibc * 0.16;
